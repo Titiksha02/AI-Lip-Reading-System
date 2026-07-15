@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI Lip Reading System</title>
+
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">🎥 LipAI</div>
+
+      <nav>
+        <a href="#">Home</a> <a href="#about">About</a>
+        <a href="#technology">Technology</a> <a href="#upload">Predict</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <h1>AI Powered Lip Reading System</h1>
+
+        <p>
+          Convert Silent Lip Movements Into Text Using Deep Learning & Computer
+          Vision
+        </p>
+
+        <a href="#upload">
+          <button class="hero-btn">Start Prediction</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="card">
+        <h2>7000+</h2>
+        <p>Training Videos</p>
+      </div>
+
+      <div class="card">
+        <h2>75</h2>
+        <p>Frames Per Video</p>
+      </div>
+
+      <div class="card">
+        <h2>LipNet</h2>
+        <p>Deep Learning Model</p>
+      </div>
+
+      <div class="card">
+        <h2>GRID</h2>
+        <p>Corpus Dataset</p>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About The Project</h2>
+
+      <p>
+        AI Lip Reading System is a Deep Learning based application that predicts
+        spoken text from silent videos by analyzing lip movements. The model is
+        trained using the GRID Corpus dataset and uses Conv3D + BiGRU
+        architecture inspired by LipNet.
+      </p>
+    </section>
+
+    <section id="technology" class="technology">
+      <h2>Technology Stack</h2>
+
+      <div class="tech-grid">
+        <div class="tech-card">Python</div>
+        <div class="tech-card">Flask</div>
+        <div class="tech-card">PyTorch</div>
+        <div class="tech-card">OpenCV</div>
+        <div class="tech-card">Deep Learning</div>
+      </div>
+    </section>
+
+    <section id="upload" class="upload-section">
+      <h2>Upload Video</h2>
+
+      <p>Upload a lip reading video and generate text prediction.</p>
+
+      <input type="file" id="videoInput" accept="video/*" />
+
+      <video
+        id="preview"
+        controls
+        width="500"
+        style="display: none; margin-top: 20px"
+      ></video>
+
+      <button class="predict-btn" onclick="predictVideo()">
+        Predict Speech
+      </button>
+
+      <div id="result">Prediction will appear here</div>
+    </section>
+
+    <section class="workflow">
+      <h2>How It Works</h2>
+
+      <div class="workflow-container">
+        <div class="workflow-box">
+          📹
+          <h3>Upload Video</h3>
+        </div>
+
+        <div class="workflow-box">
+          👄
+          <h3>Extract Lips</h3>
+        </div>
+
+        <div class="workflow-box">
+          🧠
+          <h3>LipNet Model</h3>
+        </div>
+
+        <div class="workflow-box">
+          📝
+          <h3>Generate Text</h3>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <h2>AI Lip Reading System</h2>
+
+      <p>Final Year Project 2026</p>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

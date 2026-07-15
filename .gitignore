@@ -1,0 +1,4 @@
+backend/best_lipnet.pth
+__pycache__/
+uploads/
+*.pyc
